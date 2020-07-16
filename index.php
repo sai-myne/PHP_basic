@@ -1,17 +1,27 @@
 <?php 
+
+	define('NAME', 'Yoshi');
 	
-	// echo 'hello, ninjas';
+	// $name = 'yoshi';
+	$age = 30;
+
+	// $name = 'Mario';
+
+
 
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My first PHP file</title>
+	<title>PHP Tutorials</title>
 </head>
 <body>
 
-	<h1><?php echo 'hello, ninjas'; ?></h1>
+	<h1>User Profile Page</h1>
+
+	<div><?php echo NAME ?></div>
+	<div><?php echo $age ?></div>
 
 </body>
 </html>
