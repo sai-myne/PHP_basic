@@ -6,10 +6,31 @@
 	// 	echo $_GET['ingredients'];
 	// }	
 	if(isset($_POST['submit'])){
-		echo htmlspecialchars($_POST['email'])."<br />";
-		echo htmlspecialchars($_POST['title'])."<br />";
-		echo htmlspecialchars($_POST['ingredients']);
-	}
+		// ."<br />";
+		// echo htmlspecialchars($_POST['title'])."<br />";
+		// echo htmlspecialchars($_POST['ingredients']);
+
+		// check email
+		if(empty($_POST['email'])){
+			echo "An email is required <br />";
+		} else {
+			echo htmlspecialchars($_POST['email']);
+		}
+
+		// check title
+		if(empty($_POST['title'])){
+			echo "A title is required <br />";
+		} else {
+			echo htmlspecialchars($_POST['title']);
+		}
+
+		// check ingredient
+		if(empty($_POST['ingredients'])){
+			echo "At least one ingredient is required <br />";
+		} else {
+			echo htmlspecialchars($_POST['ingredients']);
+		}
+	}// end of POST
 
 ?>
 
