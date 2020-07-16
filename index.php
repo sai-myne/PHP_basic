@@ -1,41 +1,13 @@
 <?php 
 
+	// include('ninjas.php');
+	// require('ninjas.php');
+
+	require 'ninjas.php';
+	include 'ninjas.php';
+
+	echo 'end of php';
 	
-	// variable scope
-
-	// local vars
-	function myFunc(){
-		$price = 10;
-		echo $price;
-	}
-
-	// myFunc();
-
-
-	function myFuncTwo($age){
-		echo $age;
-	}
-
-	// myFuncTwo(25);
-	// echo $age;
-
-	// global variables
-	$name = 'mario';
-	// function sayHello(){
-	// 	global $name;
-	// 	$name = 'yoshi';
-	// 	echo "hello $name";
-	// }
-	// sayHello();
-	// echo $name;
-
-	function sayBye(&$name){
-		$name = 'wario';
-		echo "bye $name";
-	}
-
-	sayBye($name);
-	echo $name;
 
 ?>
 
@@ -46,7 +18,9 @@
 </head>
 <body>
 
-
+	<?php include('content.php'); ?>
+	<?php include('content.php'); ?>
+	<?php include('content.php'); ?>
 	
 
 </body>
