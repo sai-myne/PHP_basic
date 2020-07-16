@@ -1,25 +1,32 @@
 <?php 
 
-	$stringOne = 'my email is ';
-	$stringTwo = 'mario123@thenetninja.co.uk';
+	$radius = 25;
+	$pi = 3.14;
 
-	// echo $stringOne . $stringTwo;
+	// basic - *, /, +, -, **
 
-	$name = 'mario';
+	// echo $pi * $radius**2;
 
-	// echo 'Hey, my name is ' . $name
+	// order of operation ( B I D M A S )
 
-	// echo "Hey my name is $name"
+	// echo 2 * (4 + 9) / 3;
 
-	// echo "the ninja screamed \"whaaa\"";
-	// echo 'the ninja screamed "whaaa"';
-	// echo $stringTwo[1];
+	// incremet & decrement operators
 
-	// echo strlen($stringOne);
-	// echo strtoupper($name);
-	// echo strtolower($name);
-	echo str_replace("m", "w", $name);
+	// $radius--;
+	// echo $radius;
 
+	// shorthand operators
+
+	// $age = 20;
+
+	// $age *= 2;
+	// echo $age;
+
+	// number functions
+	// echo floor($pi);
+	// echo ceil($pi);
+	echo pi();
 
 ?>
 
